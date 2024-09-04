@@ -1,0 +1,15 @@
+{
+  "@totalsoft/generator-webapp-rocket": {
+    "__TIMESTAMP__": "9/4/2024, 2:38:10 PM",
+    "__VERSION__": "4.1.7",
+    "projectDescriptionName": "ConferenceFront",
+    "gqlAddress": "localhost:4000",
+    "withSubscription": false,
+    "theme": "default",
+    "addHelm": false,
+    "withRights": false,
+    "withMultiTenancy": false,
+    "addQuickStart": false,
+    "packageManager": "npm"
+  }
+}
