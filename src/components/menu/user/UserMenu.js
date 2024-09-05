@@ -28,6 +28,7 @@ import { root } from 'utils/auth/authConfig'
 import { getOidcConfigName } from 'utils/functions'
 
 import userMenuItems from 'constants/userMenuConfig'
+import { useEmail } from 'hooks/useEmail'
 
 function UserMenu({ drawerOpen, avatar, language, changeLanguage, withGradient }) {
   const [openAvatar, setOpenAvatar] = useState(false)
@@ -57,22 +58,21 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage, withGradient }
   const userName = oidcUser?.profile?.firstName
     ? `${oidcUser.profile.name} ${oidcUser.profile.lastName}`
     : oidcUser?.name
-    ? oidcUser.name.split('@')[0]
-    : 'User'
+      ? oidcUser.name.split('@')[0]
+      : 'User'
 
-  const displayName = userName
+  const [email] = useEmail()
+  const displayName = email || userName
   return (
     <List>
       <ListItem>
         <StyledNavLinkMenu to={'/'} withGradient={withGradient} onClick={openCollapseAvatar}>
           <ListItemIcon>
-            <Avatar src={avatar ? avatar : avatar_default} alt="..." />
+            <Avatar src={avatar ? avatar : avatar_default} alt='...' />
           </ListItemIcon>
           <ListItemText
             primary={displayName}
-            secondary={
-              openAvatar ? <StyledArrowDropUp drawerOpen={drawerOpen} /> : <StyledArrowDropDown drawerOpen={drawerOpen} />
-            }
+            secondary={openAvatar ? <StyledArrowDropUp drawerOpen={drawerOpen} /> : <StyledArrowDropDown drawerOpen={drawerOpen} />}
             disableTypography={true}
             drawerOpen={drawerOpen}
           />
@@ -81,13 +81,7 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage, withGradient }
           <MenuList>
             {userMenuItems.map((userMenu, key) => {
               return (
-                <UserMenuItem
-                  key={key}
-                  userMenu={userMenu}
-                  drawerOpen={drawerOpen}
-                  activeRoute={activeRoute}
-                  withGradient={withGradient}
-                />
+                <UserMenuItem key={key} userMenu={userMenu} drawerOpen={drawerOpen} activeRoute={activeRoute} withGradient={withGradient} />
               )
             })}
             {oidcUser && (
