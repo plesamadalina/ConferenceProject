@@ -1,4 +1,5 @@
 import { curry, without, intersection, isEmpty, not } from 'ramda'
+import { validEmailRegEx } from './constants'
 
 export const extractExactAge = (birthday, referenceDate) => {
   var differenceInMilisecond = Date.parse(referenceDate) || Date.now() - Date.parse(birthday)
@@ -53,3 +54,4 @@ export const getOidcConfigName = () => {
   const tid = 'config_show_access_token'
   return tid
 }
+export const validateEmail = email => validEmailRegEx.test(email)

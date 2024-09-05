@@ -5,11 +5,17 @@
   "MyProfile": "Profilul meu",
   "Forbidden": "Nu aveti dreptul sa vedeti aceasta pagina!",
   "NavBar": {
-    "MyFirstMenu":"Primul meu meniu",
+    "Welcome": "Bine ai venit",
     "Dashboard": "Panou central",
     "Settings": "Setari",
     "Privacy": "Confidentialitate",
     "Security": "Securitate"
+  },
+
+  "LandingPage": {
+    "Title": "Bun venit!",
+    "Subtitle": "Te rog introdu email-ul personal:",
+    "BadEmail": "Acesta nu este un email valid!"
   },
   "Tooltips": {
     "Logout": "Iesire",
