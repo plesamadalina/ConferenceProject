@@ -12,12 +12,36 @@
   "DECIMAL2": "{{number,intlDecimal2}}",
   "MyProfile": "My Profile",
   "Forbidden": "Not allowed to see this page!",
+
+  "General": {
+    "Buttons": {
+      "ApplyFilters": "Apply filters",
+      "ResetFilters": "Reset filters"
+    }
+  },
+
+  "Conferences": {
+    "Filters": {
+      "StartDate": "Start date",
+      "EndDate": "End date"
+    }
+  },
+  "List": {
+    "Speaker": "Speaker: ",
+    "Attend": "Attend",
+    "Join": "Join",
+    "Withdraw": "Withdraw",
+    "StatusNotSet": "Not attending"
+  },
+
   "NavBar": {
     "Welcome": "Welcome",
+    "Conferences": "Conferences",
     "Dashboard": "Dashboard",
     "Settings": "Settings",
     "Privacy": "Privacy",
-    "Security": "Security"
+    "Security": "Security",
+    "Forbidden": "Forbidden"
   },
 
   "LandingPage": {
