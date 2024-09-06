@@ -9,11 +9,13 @@
     "Buttons": {
       "ApplyFilters": "Aplica filtre",
       "ResetFilters": "Reseteaza filtre",
-      "AddConference": "Adauga conferinta"
+      "AddConference": "Adauga conferinta",
+      "Save": "Salveaza",
+      "AddSpeaker": "Adauga orator"
     }
   },
 
-  "Conferences": {
+  "Conference": {
     "StartDate": "Data incepere",
     "EndDate": "Data terminare",
     "Speaker": "Orator: ",
@@ -22,7 +24,10 @@
     "Withdraw": "Retrage-te",
     "StatusNotSet": "Nu participi",
     "Edit": "Editeaza",
-    "Delete": "Sterge"
+    "Delete": "Sterge",
+    "Info": "Informatii conferinta",
+    "Location": "Locatie",
+    "Speakers": "Oratori"
   },
 
   "NavBar": {

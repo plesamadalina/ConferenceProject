@@ -17,11 +17,13 @@
     "Buttons": {
       "ApplyFilters": "Apply filters",
       "ResetFilters": "Reset filters",
-      "AddConference": "Add conference"
+      "AddConference": "Add conference",
+      "Save": "Save",
+      "AddSpeaker": "Add speaker"
     }
   },
 
-  "Conferences": {
+  "Conference": {
     "Speaker": "Speaker: ",
     "Attend": "Attend",
     "Join": "Join",
@@ -29,6 +31,9 @@
     "StatusNotSet": "Not attending",
     "Edit": "Edit",
     "Delete": "Delete",
+    "Info": "Conference info",
+    "Location": "Location",
+    "Speakers": "Speakers",
 
     "Filters": {
       "StartDate": "Start date",
