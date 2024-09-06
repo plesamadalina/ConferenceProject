@@ -16,22 +16,24 @@
   "General": {
     "Buttons": {
       "ApplyFilters": "Apply filters",
-      "ResetFilters": "Reset filters"
+      "ResetFilters": "Reset filters",
+      "AddConference": "Add conference"
     }
   },
 
   "Conferences": {
-    "Filters": {
-      "StartDate": "Start date",
-      "EndDate": "End date"
-    }
-  },
-  "List": {
     "Speaker": "Speaker: ",
     "Attend": "Attend",
     "Join": "Join",
     "Withdraw": "Withdraw",
-    "StatusNotSet": "Not attending"
+    "StatusNotSet": "Not attending",
+    "Edit": "Edit",
+    "Delete": "Delete",
+
+    "Filters": {
+      "StartDate": "Start date",
+      "EndDate": "End date"
+    }
   },
 
   "NavBar": {
